@@ -26,8 +26,11 @@ public class Main {
 		c1.setDataCadastro(new Date());
 		c1.setId(6);//Número da Chave primária
 		
-		contatoDao.update(c1);
+		//contatoDao.update(c1);
 		
+		//Deletar o contato pelo ID
+		//contatoDao.deleteByID(1);
+		contatoDao.deleteByID(6);
 		
 		//Visualização dos registros do banco de dados TODOS os registros
 		for(Contato c : contatoDao.getContatos()) {
